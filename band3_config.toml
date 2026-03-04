@@ -67636,6 +67636,71 @@ d3d12_readback_resolve = true
 0x82B98D78 = { size = 0x8 }
 0x8243F3C0 = { size = 0x20 }
 
+# Switch table entries pulled from rexglue 0.2.1 codegen output. May not be accurate.
+[[switch_tables]]
+address = 0x82961964
+register = 29
+labels = [
+	0x82961968,
+	0x82961968,
+	0x8296145C,
+	0x82961968,
+	0x82961968,
+	0x82961968,
+	0x82961968,
+	0x8296145C,
+	0x8296145C,
+	0x82961968,
+	0x8296145C,
+	0x8296145C,
+	0x82961968,
+	0x82961968,
+	0x82961968,
+	0x82961968,
+	]
+
+# Switch table entries pulled from rexglue 0.2.1 codegen output. May not be accurate.
+[[switch_tables]]
+address = 0x829F1AF8
+register = 11
+labels = [
+	0x829F1AFC,
+	0x829F1B1C,
+	0x829F1BC4,
+	0x829F1BC4,
+	0x829F1AFC,
+	0x829F1AFC,
+	0x829F1B54,
+	0x829F1AFC,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1B90,
+	0x829F1BE0,
+	0x829F1BE0,
+	0x829F1B6C,
+	0x829F1B0C,
+	0x829F1E64,
+	0x829F1EDC,
+	0x829F1C04,
+	0x829F1C04,
+	0x829F9FE4
+	]
+
 [[midasm_hook]]
 address = 0x825320B4
 name = "ControllerHook"
