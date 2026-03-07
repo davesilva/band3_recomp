@@ -41,22 +41,35 @@ void LoadConfig(const char* path) {
         reader.GetBoolean("game", "fast_start", g_config.fast_start);
     g_config.disable_metamusic =
         reader.GetBoolean("game", "disable_metamusic", g_config.disable_metamusic);
+    g_config.lang =
+        reader.Get("game", "lang", g_config.lang);
+    g_config.disable_approximate_lights =
+        reader.GetBoolean("graphics", "disable_approximate_lights", g_config.disable_approximate_lights);
+    g_config.disable_hair_shader =
+        reader.GetBoolean("graphics", "disable_hair_shader", g_config.disable_hair_shader);
+    g_config.compress_character_textures =
+        reader.GetBoolean("graphics", "compress_character_textures", g_config.compress_character_textures);
+    g_config.fullbright =
+        reader.GetBoolean("graphics", "fullbright", g_config.fullbright);
     g_config.debug_overlay =
         reader.GetBoolean("debug", "overlay", g_config.debug_overlay);
     g_config.log_level =
         reader.Get("debug", "log_level", g_config.log_level);
-    REXLOG_INFO("Config: controller_type={}, sync={}, fullscreen={}, "
-        "width={}, height={}, fast_start={}, debug_overlay={}, log_level={}",
-        g_config.controller_type, g_config.sync, g_config.forced_venue,
-        g_config.fullscreen, g_config.width, g_config.height,
-        g_config.fast_start, g_config.disable_metamusic,
-        g_config.debug_overlay, g_config.log_level);
 
     // Inject config-driven args into the command line
+    GetArgs();
     if (g_config.fast_start) {
-        GetArgs(); // ensure g_args is initialized
-        g_args.push_back("fast");
+        g_args.push_back("-fast");
     }
+    if (!g_config.lang.empty()) {
+        g_args.push_back("-lang");
+        g_args.push_back(g_config.lang);
+    }
+
+    // hard defines for various usecases
+    // Rock Band 3 DX identifier
+    g_args.push_back("-define");
+    g_args.push_back("MHX_PC");
 }
 
 const std::vector<std::string>& GetArgs() {
@@ -72,6 +85,7 @@ const std::vector<std::string>& GetArgs() {
             g_args.push_back(std::move(s));
         }
 #else
+		// quality code alert
         std::ifstream cmdline("/proc/self/cmdline", std::ios::binary);
         if (cmdline) {
             std::string arg;

@@ -37,10 +37,11 @@ extern "C" PPC_FUNC(OptionBool)
 		base + static_cast<uint32_t>(ctx.r3.u64));
 	bool defaultVal = ctx.r4.u64 != 0;
 
+	std::string dashOption = std::string("-") + optionName;
 	const auto& args = band3::GetArgs();
 	for (size_t i = 0; i < args.size(); i++) {
 		if (g_consumed_args.count(i)) continue;
-		if (args[i] == optionName) {
+		if (args[i] == dashOption) {
 			REXLOG_INFO("OptionBool(\"{}\") = {} (found)", optionName, !defaultVal);
 			g_consumed_args.insert(i);
 			ctx.r3.u64 = !defaultVal;
@@ -58,11 +59,12 @@ extern "C" PPC_FUNC(OptionStr)
 		base + static_cast<uint32_t>(ctx.r3.u64));
 	uint32_t defaultPtr = static_cast<uint32_t>(ctx.r4.u64);
 
+	std::string dashOption = std::string("-") + option;
 	REXLOG_INFO("Checking for string arg {}", option);
 	const auto& args = band3::GetArgs();
 	for (size_t i = 0; i < args.size(); i++) {
 		if (g_consumed_args.count(i)) continue;
-		if (args[i] == option && i + 1 < args.size()) {
+		if (args[i] == dashOption && i + 1 < args.size()) {
 			const std::string& value = args[i + 1];
 			auto* mem = rex::system::kernel_memory();
 			uint32_t len = static_cast<uint32_t>(value.size() + 1);

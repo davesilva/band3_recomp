@@ -534,7 +534,7 @@ loc_824BDDB0:
 	PPC_STORE_U32(ctx.r30.u32 + 8, temp.u32);
 	// bl pow
 	ctx.lr = 0x824BDE84;
-	band_pow(ctx, base);
+	_pow(ctx, base);
 	// frsp f0,f1
 	ctx.fpscr.disableFlushMode();
 	ctx.f0.f64 = double(float(ctx.f1.f64));
