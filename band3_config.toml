@@ -50611,10 +50611,8 @@ d3d12_readback_resolve = true
 0x8282A418 = { name = "register_global_object", size = 0x28 }
 0x8282A440 = { name = "_strchr", size = 0x3C }
 0x8282A488 = { name = "rex_sub_8282A488", size = 0xD0 }
-0x8282A560 = { name = "rex_sub_8282A560", size = 0xBC }
-0x8282A61C = { name = "rex_sub_8282A61C", size = 0x68 }
-0x8282A690 = { name = "construct_array", size = 0xB0 }
-0x8282A740 = { name = "rex_sub_8282A740", size = 0x60 }
+0x8282A560 = { name = "rex_sub_8282A560", size = 0x124 }
+0x8282A690 = { name = "construct_array", size = 0x110 }
 0x8282A840 = { name = "_memmove", size = 0xBC }
 0x8282A900 = { name = "_memcpy", size = 0x488 }
 0x8282AD88 = { name = "_blkmov", size = 0xA8 }
@@ -50649,18 +50647,14 @@ d3d12_readback_resolve = true
 0x8282C870 = { name = "rex_sub_8282C870", size = 0x18C }
 0x8282CA00 = { name = "rex_sub_8282CA00", size = 0x2C }
 0x8282CA30 = { name = "rex_sub_8282CA30", size = 0x9C }
-0x8282CAD8 = { name = "rex_sub_8282CAD8", size = 0xC4 }
-0x8282CB9C = { name = "rex_sub_8282CB9C", size = 0x38 }
+0x8282CAD8 = { name = "rex_sub_8282CAD8", size = 0xFC }
 0x8282CBD8 = { name = "rex_sub_8282CBD8", size = 0x28C }
-0x8282CE70 = { name = "rex_sub_8282CE70", size = 0xD4 }
-0x8282CF44 = { name = "rex_sub_8282CF44", size = 0x38 }
+0x8282CE70 = { name = "rex_sub_8282CE70", size = 0x10C }
 0x8282CF80 = { name = "rex_sub_8282CF80", size = 0x14 }
 0x8282CF98 = { name = "rex_sub_8282CF98", size = 0x220 }
-0x8282D1C0 = { name = "rex_sub_8282D1C0", size = 0xA4 }
-0x8282D264 = { name = "rex_sub_8282D264", size = 0x38 }
+0x8282D1C0 = { name = "rex_sub_8282D1C0", size = 0xDC }
 0x8282D2A0 = { name = "rex_sub_8282D2A0", size = 0xC8 }
-0x8282D370 = { name = "rex_sub_8282D370", size = 0xB4 }
-0x8282D424 = { name = "rex_sub_8282D424", size = 0x38 }
+0x8282D370 = { name = "rex_sub_8282D370", size = 0xEC }
 0x8282D460 = { name = "rex_sub_8282D460", size = 0xE0 }
 0x8282D540 = { name = "rex_sub_8282D540", size = 0xFC }
 0x8282D640 = { name = "rex_sub_8282D640", size = 0x24 }
@@ -50677,25 +50671,20 @@ d3d12_readback_resolve = true
 0x8282DBB8 = { name = "rex_sub_8282DBB8", size = 0x5C }
 0x8282DC18 = { name = "rex_sub_8282DC18", size = 0x50 }
 0x8282DC68 = { name = "rex_sub_8282DC68", size = 0xB8 }
-0x8282DD28 = { name = "rex_sub_8282DD28", size = 0x144 }
-0x8282DE6C = { name = "rex_sub_8282DE6C", size = 0x38 }
+0x8282DD28 = { name = "rex_sub_8282DD28", size = 0x17C }
 0x8282DEA8 = { name = "rex_sub_8282DEA8", size = 0xDC }
-0x8282DF90 = { name = "rex_sub_8282DF90", size = 0x128 }
-0x8282E0B8 = { name = "rex_sub_8282E0B8", size = 0x38 }
+0x8282DF90 = { name = "rex_sub_8282DF90", size = 0x160 }
 0x8282E0F0 = { name = "rex_sub_8282E0F0", size = 0xC8 }
-0x8282E1C0 = { name = "rex_sub_8282E1C0", size = 0x148 }
-0x8282E308 = { name = "rex_sub_8282E308", size = 0x38 }
+0x8282E1C0 = { name = "rex_sub_8282E1C0", size = 0x180 }
 0x8282E340 = { name = "rex_sub_8282E340", size = 0x40 }
 0x8282E380 = { name = "rex_sub_8282E380", size = 0x70 }
 0x8282E3F0 = { name = "rex_sub_8282E3F0", size = 0x38 }
 0x8282E428 = { name = "rex_sub_8282E428", size = 0x38 }
 0x8282E460 = { name = "rex_sub_8282E460", size = 0x70 }
 0x8282E4D0 = { name = "rex_sub_8282E4D0", size = 0x240 }
-0x8282E718 = { name = "rex_sub_8282E718", size = 0x144 }
-0x8282E85C = { name = "rex_sub_8282E85C", size = 0x38 }
+0x8282E718 = { name = "rex_sub_8282E718", size = 0x17C }
 0x8282E898 = { name = "rex_sub_8282E898", size = 0x40 }
-0x8282E8E0 = { name = "rex_sub_8282E8E0", size = 0xB4 }
-0x8282E994 = { name = "rex_sub_8282E994", size = 0x60 }
+0x8282E8E0 = { name = "rex_sub_8282E8E0", size = 0x114 }
 0x8282E9F8 = { name = "rex_sub_8282E9F8", size = 0x2D8 }
 0x8282ECD0 = { name = "rex_sub_8282ECD0", size = 0x8 }
 0x8282ECD8 = { name = "rex_sub_8282ECD8", size = 0x8 }
@@ -50710,8 +50699,7 @@ d3d12_readback_resolve = true
 0x8282EF88 = { name = "rex_sub_8282EF88", size = 0x8 }
 0x8282EF90 = { name = "rex_sub_8282EF90", size = 0x3C }
 0x8282EFD0 = { name = "rex_sub_8282EFD0", size = 0x58 }
-0x8282F030 = { name = "rex_sub_8282F030", size = 0x184 }
-0x8282F1B4 = { name = "rex_sub_8282F1B4", size = 0x40 }
+0x8282F030 = { name = "rex_sub_8282F030", size = 0x1C4 }
 0x8282F1F8 = { name = "rex_sub_8282F1F8", size = 0xC }
 0x8282F208 = { name = "rex_sub_8282F208", size = 0xC }
 0x8282F218 = { name = "rex_sub_8282F218", size = 0xC }
@@ -50821,15 +50809,12 @@ d3d12_readback_resolve = true
 0x82834DE0 = { name = "rex_sub_82834DE0", size = 0x68 }
 0x82834E48 = { name = "rex_sub_82834E48", size = 0x94 }
 0x82834EE0 = { name = "rex_sub_82834EE0", size = 0x78 }
-0x82834F60 = { name = "rex_sub_82834F60", size = 0x174 }
-0x828350D4 = { name = "rex_sub_828350D4", size = 0x64 }
-0x82835140 = { name = "rex_sub_82835140", size = 0xBC }
-0x828351FC = { name = "rex_sub_828351FC", size = 0x38 }
+0x82834F60 = { name = "rex_sub_82834F60", size = 0x1D8 }
+0x82835140 = { name = "rex_sub_82835140", size = 0xF4 }
 0x82835238 = { name = "rex_sub_82835238", size = 0x8 }
 0x82835240 = { name = "rex_sub_82835240", size = 0x1AC }
 0x828353F0 = { name = "rex_sub_828353F0", size = 0x618 }
-0x82835A10 = { name = "rex_sub_82835A10", size = 0x170 }
-0x82835B80 = { name = "rex_sub_82835B80", size = 0x38 }
+0x82835A10 = { name = "rex_sub_82835A10", size = 0x1A8 }
 0x82835BB8 = { name = "rex_sub_82835BB8", size = 0xAC }
 0x82835C68 = { name = "rex_sub_82835C68", size = 0xD4 }
 0x82835D40 = { name = "rex_sub_82835D40", size = 0x84 }
@@ -50844,9 +50829,7 @@ d3d12_readback_resolve = true
 0x82836F18 = { name = "rex_sub_82836F18", size = 0xC }
 0x82836F28 = { name = "rex_sub_82836F28", size = 0xEC }
 0x82837018 = { name = "rex_sub_82837018", size = 0x64 }
-0x82837088 = { name = "rex_sub_82837088", size = 0xC8 }
-0x82837150 = { name = "rex_sub_82837150", size = 0x38 }
-0x82837188 = { name = "rex_sub_82837188", size = 0x18 }
+0x82837088 = { name = "rex_sub_82837088", size = 0x118 }
 0x828371A0 = { name = "rex_sub_828371A0", size = 0x1E4 }
 0x82837388 = { name = "rex_sub_82837388", size = 0x88 }
 0x82837410 = { name = "rex_sub_82837410", size = 0x98 }
@@ -50855,16 +50838,14 @@ d3d12_readback_resolve = true
 0x82837668 = { name = "rex_sub_82837668", size = 0x28 }
 0x82837698 = { name = "rex_sub_82837698", size = 0x27C }
 0x82837918 = { name = "rex_sub_82837918", size = 0x51C }
-0x82837E40 = { name = "rex_sub_82837E40", size = 0xFC }
-0x82837F3C = { name = "rex_sub_82837F3C", size = 0x88 }
+0x82837E40 = { name = "rex_sub_82837E40", size = 0x184 }
 0x82837FC8 = { name = "rex_sub_82837FC8", size = 0xA0 }
 0x82838068 = { name = "rex_sub_82838068", size = 0xBC }
 0x82838128 = { name = "rex_sub_82838128", size = 0x6C }
 0x82838198 = { name = "rex_sub_82838198", size = 0x14 }
 0x828381B8 = { name = "rex_sub_828381B8", size = 0x94 }
 0x82838250 = { name = "rex_sub_82838250", size = 0x80 }
-0x828382D8 = { name = "rex_sub_828382D8", size = 0x110 }
-0x828383E8 = { name = "rex_sub_828383E8", size = 0x2C }
+0x828382D8 = { name = "rex_sub_828382D8", size = 0x13C }
 0x82838418 = { name = "rex_sub_82838418", size = 0x60 }
 0x82838480 = { name = "rex_sub_82838480", size = 0xE4 }
 0x82838568 = { name = "rex_sub_82838568", size = 0xA8 }
@@ -50881,8 +50862,7 @@ d3d12_readback_resolve = true
 0x82838B9C = { name = "rex_sub_82838B9C", size = 0x24 }
 0x82838BC0 = { name = "rex_sub_82838BC0", size = 0x28 }
 0x82838BE8 = { name = "rex_sub_82838BE8", size = 0xC }
-0x82838C00 = { name = "rex_sub_82838C00", size = 0x2A8 }
-0x82838EA8 = { name = "rex_sub_82838EA8", size = 0x40 }
+0x82838C00 = { name = "rex_sub_82838C00", size = 0x2E8 }
 0x82838EE8 = { name = "rex_sub_82838EE8", size = 0xC4 }
 0x82838FB0 = { name = "rex_sub_82838FB0", size = 0x10 }
 0x82838FC0 = { name = "rex_sub_82838FC0", size = 0x7C }
@@ -50896,8 +50876,7 @@ d3d12_readback_resolve = true
 0x82839688 = { name = "rex_sub_82839688", size = 0x714 }
 0x82839DA0 = { name = "rex_sub_82839DA0", size = 0x714 }
 0x8283A4B8 = { name = "rex_sub_8283A4B8", size = 0x294 }
-0x8283A758 = { name = "rex_sub_8283A758", size = 0x138 }
-0x8283A890 = { name = "rex_sub_8283A890", size = 0x38 }
+0x8283A758 = { name = "rex_sub_8283A758", size = 0x170 }
 0x8283A8C8 = { name = "rex_sub_8283A8C8", size = 0x88 }
 0x8283A950 = { name = "rex_sub_8283A950", size = 0xF4 }
 0x8283AA48 = { name = "rex_sub_8283AA48", size = 0x8 }
@@ -51042,12 +51021,11 @@ d3d12_readback_resolve = true
 0x82842478 = { name = "rex_sub_82842478", size = 0x23C }
 0x828426B8 = { name = "rex_sub_828426B8", size = 0x360 }
 0x82842A20 = { name = "rex_sub_82842A20", size = 0x5C8 }
-0x82842FF0 = { name = "rex_sub_82842FF0", size = 0x8A8 }
-0x82843898 = { name = "rex_sub_82843898", size = 0x48 }
-0x828438E8 = { name = "rex_sub_828438E8", size = 0x2A4 }
-0x82843B8C = { name = "rex_sub_82843B8C", size = 0x48 }
-0x82843BE0 = { name = "rex_sub_82843BE0", size = 0x868 }
-0x82844448 = { name = "rex_sub_82844448", size = 0x44 }
+0x82842FF0 = { name = "rex_sub_82842FF0", size = 0x8F0 }
+0x828438E8 = { name = "rex_sub_828438E8", size = 0x2EC }
+0x82843BE0 = { name = "rex_sub_82843BE0", size = 0x8AC }
+0x8284448C = { name = "rex_sub_8284448C", size = 0x24 }
+0x828444B0 = { name = "rex_sub_828444B0", size = 0xC }
 0x828444C0 = { name = "rex_sub_828444C0", size = 0xC }
 0x828444D0 = { name = "_TerminateThread", size = 0x24 }
 0x82844500 = { name = "rex_sub_82844500", size = 0x4 }
@@ -64331,8 +64309,7 @@ d3d12_readback_resolve = true
 0x82BBD0B8 = { name = "rex_sub_82BBD0B8", size = 0xA5C }
 0x82BBDB18 = { name = "rex_sub_82BBDB18", size = 0x124 }
 0x82BBDC40 = { name = "rex_sub_82BBDC40", size = 0xC }
-0x82BBDC58 = { name = "rex_sub_82BBDC58", size = 0x12C }
-0x82BBDD84 = { name = "rex_sub_82BBDD84", size = 0x60 }
+0x82BBDC58 = { name = "rex_sub_82BBDC58", size = 0x18C }
 0x82BBDDE8 = { name = "rex_sub_82BBDDE8", size = 0xC }
 0x82BBDDF8 = { name = "rex_sub_82BBDDF8", size = 0xC }
 0x82BBDE08 = { name = "rex_sub_82BBDE08", size = 0x50 }
@@ -67510,8 +67487,6 @@ d3d12_readback_resolve = true
 0x82C5B7A8 = { name = "rex_sub_82C5B7A8", size = 0xA68 }
 0x82C5C210 = { name = "rex_sub_82C5C210", size = 0x4E8 }
 0x82C5C6F8 = { name = "rex_sub_82C5C6F8", size = 0x918 }
-0x82c27ce0 = { name = "rex_sub_82c27ce0", size = 0x3c }
-
 0x822C46C0 = { name = "rex_sub_822C46C0", size = 0xC }
 0x822D1250 = { name = "rex_sub_822D1250", size = 0xC }
 0x8230F068 = { name = "rex_sub_8230F068", size = 0xC }
@@ -67611,8 +67586,6 @@ d3d12_readback_resolve = true
 0x82826920 = { name = "rex_sub_82826920", size = 0x4 }
 0x8283CED8 = { name = "rex_sub_8283CED8", size = 0x24 }
 0x8283EB68 = { name = "rex_sub_8283EB68", size = 0x4 }
-0x8284448C = { name = "rex_sub_8284448C", size = 0x24 }
-0x828444B0 = { name = "rex_sub_828444B0", size = 0xC }
 0x8286B790 = { name = "rex_sub_8286B790", size = 0x38 }
 0x82A1D448 = { name = "rex_sub_82A1D448", size = 0x20 }
 0x82A1E088 = { name = "rex_sub_82A1E088", size = 0x1C }
@@ -67633,30 +67606,7 @@ d3d12_readback_resolve = true
 0x82B98D78 = { size = 0x8 }
 0x8243F3C0 = { size = 0x20 }
 
-# Switch table entries pulled from rexglue 0.2.1 codegen output. May not be accurate.
-[[switch_tables]]
-address = 0x82961964
-register = 29
-labels = [
-	0x82961968,
-	0x82961968,
-	0x8296145C,
-	0x82961968,
-	0x82961968,
-	0x82961968,
-	0x82961968,
-	0x8296145C,
-	0x8296145C,
-	0x82961968,
-	0x8296145C,
-	0x8296145C,
-	0x82961968,
-	0x82961968,
-	0x82961968,
-	0x82961968,
-	]
-
-# Switch table entries pulled from rexglue 0.2.1 codegen output. May not be accurate.
+# As of rexglue 0.5.0 this table gets generated longer than it should. could remove this since that isn't the worst thing
 [[switch_tables]]
 address = 0x829F1AF8
 register = 11
@@ -67708,4 +67658,4 @@ after_instruction = true
 address = 0x825216C0
 name = "UpdateArkHook"
 registers = ["r4"]
-after_instruction = true
+after_instruction = false
