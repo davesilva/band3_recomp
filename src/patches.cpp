@@ -138,6 +138,14 @@ extern "C" PPC_FUNC(MetaMusic__Loaded)
     __imp__MetaMusic__Loaded(ctx, base);
 }
 
+// no more demos!
+extern "C" void __imp__SongMgr__IsDemo(PPCContext& ctx, uint8_t* base);
+extern "C" PPC_FUNC(SongMgr__IsDemo)
+{
+    ctx.r3.u64 = 0;
+    return;
+}
+
 //Set venue from ini hook, reloads the entire config when setvenue is called, sure
 //also doesnt clear allocations for previous strings. Bad? Maybe!
 extern "C" void __imp__MetaPerformer__SetVenue(PPCContext& ctx, uint8_t* base);
