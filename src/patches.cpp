@@ -22,6 +22,10 @@ void UpdateArkHook(PPCRegister& r4) {
     r4.u64 = 0x82089B50;
 }
 
+void SongCountHook(PPCRegister& r3) {
+    r3.u64 = 8000; //8000 is apparently what rb3e sets, so use that
+}
+
 //replace calls to 822703D0 (bad) with 822703A8 (good)
 extern "C" PPC_FUNC(App__Run)
 {
