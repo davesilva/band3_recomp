@@ -22,6 +22,10 @@ void UpdateArkHook(PPCRegister& r4) {
     r4.u64 = 0x82089B50;
 }
 
+void SongCountHook(PPCRegister& r3) {
+    r3.u64 = 8000; //8000 is apparently what rb3e sets, so use that
+}
+
 //replace calls to 822703D0 (bad) with 822703A8 (good)
 extern "C" PPC_FUNC(App__Run)
 {
@@ -236,3 +240,11 @@ extern "C" PPC_FUNC(MetaPerformer__SetVenue)
     ctx.r4.u64 = str_guest;
     __imp__MetaPerformer__SetVenue(ctx, base);
 }
+
+//force this import so dlc can load through its roundabout way
+PPC_EXTERN_IMPORT(__imp__XamContentAggregateCreateEnumerator);
+//I'll be the roundabout
+//The words will make you out and out
+//You spend the day your wayyyyy
+//Call it morning driving through the south in and out the valleyyyyyyyyyyyy
+[[gnu::used]] static volatile auto imp_XamContentAggregateCreateEnumerator = &__imp__XamContentAggregateCreateEnumerator;

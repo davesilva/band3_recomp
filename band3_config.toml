@@ -50961,7 +50961,7 @@ d3d12_readback_resolve = true
 0x8283EC88 = { name = "rex_sub_8283EC88", size = 0x84 }
 0x8283ED10 = { name = "rex_sub_8283ED10", size = 0x148 }
 0x8283EE58 = { name = "rex_sub_8283EE58", size = 0x114 }
-0x8283EF70 = { name = "rex_sub_8283EF70", size = 0xCC }
+0x8283EF70 = { name = "XContentCreateCrossTitleEnumerator", size = 0xCC }
 0x8283F040 = { name = "rex_sub_8283F040", size = 0x7C }
 0x8283F0C0 = { name = "rex_sub_8283F0C0", size = 0x178 }
 0x8283F238 = { name = "rex_sub_8283F238", size = 0x108 }
@@ -67660,3 +67660,9 @@ address = 0x825216C0
 name = "UpdateArkHook"
 registers = ["r4"]
 after_instruction = false
+
+[[midasm_hook]]
+address = 0x82579880
+name = "SongCountHook"
+registers = ["r3"]
+after_instruction = true
