@@ -240,3 +240,11 @@ extern "C" PPC_FUNC(MetaPerformer__SetVenue)
     ctx.r4.u64 = str_guest;
     __imp__MetaPerformer__SetVenue(ctx, base);
 }
+
+//force this import so dlc can load through its roundabout way
+PPC_EXTERN_IMPORT(__imp__XamContentAggregateCreateEnumerator);
+//I'll be the roundabout
+//The words will make you out and out
+//You spend the day your wayyyyy
+//Call it morning driving through the south in and out the valleyyyyyyyyyyyy
+[[gnu::used]] static volatile auto imp_XamContentAggregateCreateEnumerator = &__imp__XamContentAggregateCreateEnumerator;
