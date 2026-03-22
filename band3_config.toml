@@ -15754,7 +15754,7 @@ d3d12_readback_resolve = true
 0x8242F7B8 = { name = "RndPostProc__Refract", size = 0x30 }
 0x8242F7E8 = { name = "rex_sub_8242F7E8", size = 0x1B0 }
 0x8242F998 = { name = "rex_sub_8242F998", size = 0xE8 }
-0x8242FA80 = { name = "rex_sub_8242FA80", size = 0x13C }
+0x8242FA80 = { name = "ProcCounter__ProcCommands", size = 0x13C }
 0x8242FBC8 = { name = "RndPostProc_ct", size = 0x29C }
 0x8242FE64 = { name = "rex_sub_8242FE64", size = 0x28 }
 0x8242FE8C = { name = "rex_sub_8242FE8C", size = 0x2C }

@@ -34,6 +34,16 @@ extern "C" PPC_FUNC(RndMat__Load)
     }
 }
 
+extern "C" void __imp__ProcCounter__ProcCommands(PPCContext& ctx, uint8_t* base);
+extern "C" PPC_FUNC(ProcCounter__ProcCommands)
+{
+    if (band3::GetConfig().disable_even_odd_rendering) {
+        ctx.r3.u64 = 7;
+        return;
+    }
+    __imp__ProcCounter__ProcCommands(ctx, base);
+}
+
 extern "C" PPC_FUNC(OutfitConfig__CompressTextures)
 {
     if (!band3::GetConfig().compress_character_textures) {

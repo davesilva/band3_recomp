@@ -19,6 +19,7 @@ struct Config {
     bool disable_hair_shader = false;
     bool fullbright = false;
     bool compress_character_textures = false;
+    bool disable_even_odd_rendering = false;
     long main_heap_size = 0;
     long char_heap_size = 0;
     std::string username;

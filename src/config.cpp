@@ -51,6 +51,8 @@ void LoadConfig(const char* path) {
         reader.GetBoolean("graphics", "compress_character_textures", g_config.compress_character_textures);
     g_config.fullbright =
         reader.GetBoolean("graphics", "fullbright", g_config.fullbright);
+    g_config.disable_even_odd_rendering =
+        reader.GetBoolean("graphics", "disable_even_odd_rendering", g_config.disable_even_odd_rendering);
     g_config.username =
         reader.Get("profile", "username", g_config.username);
     g_config.main_heap_size =
