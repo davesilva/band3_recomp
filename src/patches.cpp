@@ -14,7 +14,8 @@
 static std::set<size_t> g_consumed_args;
 
 void ControllerHook(PPCRegister& r11) {
-    r11.u64 = band3::GetConfig().controller_type;
+    long overrideType = band3::GetConfig().controller_type;
+    if (overrideType != -1) r11.u64 = overrideType;
 }
 
 void UpdateArkHook(PPCRegister& r4) {
