@@ -1,7 +1,5 @@
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
-#include <rex/ppc/memory.h>
 #include <rex/logging.h>
+#include "generated/band3_init.h"
 #include "src/config.h"
 
 extern "C" void __imp__BoxMapLighting__ApplyQueuedLights(PPCContext& ctx, uint8_t* base);

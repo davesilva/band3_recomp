@@ -1,6 +1,6 @@
 // frame-rate independent camera shake
 
-#include "band3_init.h"
+#include "generated/band3_init.h"
 #include <chrono>
 
 static float GetRealFpsScale() {

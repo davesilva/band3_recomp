@@ -1,5 +1,3 @@
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
 #include <rex/system/kernel_state.h>
 #include <rex/logging.h>
 #include <cstring>

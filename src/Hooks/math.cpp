@@ -1,6 +1,6 @@
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
 #include <cmath>
+#include <rex/hook.h>
+#include "generated/band3_init.h"
 
 // native replacements for recompiled PPC math functions
 

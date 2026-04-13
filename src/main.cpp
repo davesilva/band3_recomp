@@ -4,7 +4,6 @@
 // This file is SDK-managed. Customizations go in virtual hook overrides.
 // Running 'rexglue migrate' will overwrite this file.
 
-#include "generated/band3_config.h"
 #include "generated/band3_init.h"
 
 #include <rex/rex_app.h>
@@ -42,8 +41,7 @@ class Band3App : public rex::ReXApp {
     REXCVAR_SET(log_file, std::string("band3.log"));
     REXCVAR_SET(log_level, std::string("info"));
     return std::unique_ptr<Band3App>(new Band3App(ctx, "band3",
-        {PPC_CODE_BASE, PPC_CODE_SIZE, PPC_IMAGE_BASE,
-         PPC_IMAGE_SIZE, PPCFuncMappings, REXCRT_HEAP}));
+        PPCImageConfig));
   }
 
   void OnPostSetup() override {

@@ -1,6 +1,4 @@
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
-#include <rex/ppc/memory.h>
+#include <rex/hook.h>
 #include <rex/logging.h>
 #include <cstring>
 #include "src/config.h"

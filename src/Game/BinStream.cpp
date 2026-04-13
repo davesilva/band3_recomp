@@ -1,6 +1,5 @@
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
 #include "src/Game/BinStream.h"
+#include <rex/hook.h>
 #include <cstdint>
 #include <cstring>
 
