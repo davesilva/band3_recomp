@@ -1,6 +1,5 @@
 #include "Symbol.h"
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
+#include <rex/hook.h>
 #include <rex/logging.h>
 #include <cstring>
 

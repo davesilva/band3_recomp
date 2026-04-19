@@ -3022,10 +3022,10 @@ strcpy_s                = 0x8282B0B8
 0x822C115C = { name = "rex_sub_822C115C", size = 0x44 }
 0x822C11A8 = { name = "rex_sub_822C11A8", size = 0xB4 }
 0x822C125C = { name = "rex_sub_822C125C", size = 0x20 }
-0x822C1280 = { name = "Normalize_Vector3", size = 0x80 }
-0x822C1300 = { name = "Interp_Vector3", size = 0xA4 }
-0x822C13A8 = { name = "Multiply_Matrix3", size = 0x2A8 }
-0x822C1650 = { name = "Normalize_Matrix3", size = 0xC4 }
+0x822C1280 = { name = "_Normalize_Vector3", size = 0x80 }
+0x822C1300 = { name = "_Interp_Vector3", size = 0xA4 }
+0x822C13A8 = { name = "_Multiply_Matrix3", size = 0x2A8 }
+0x822C1650 = { name = "_Normalize_Matrix3", size = 0xC4 }
 0x822C1718 = { name = "rex_sub_822C1718", size = 0xB8 }
 0x822C17D0 = { name = "rex_sub_822C17D0", size = 0x8C }
 0x822C1860 = { name = "rex_sub_822C1860", size = 0x98 }

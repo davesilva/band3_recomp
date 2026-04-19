@@ -1,9 +1,7 @@
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
-#include <rex/ppc/memory.h>
 #include <rex/logging.h>
 #include <cstdint>
 #include <cstring>
+#include "generated/band3_init.h"
 #include "src/config.h"
 #include "src/Game/DataNode.h"
 #include "src/Game/DataArray.h"

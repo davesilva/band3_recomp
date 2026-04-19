@@ -1,12 +1,10 @@
 #include "DataArray.h"
-#include <rex/ppc/context.h>
-#include <rex/ppc/function.h>
 #include <rex/logging.h>
 #include <rex/system/kernel_state.h>
 #include <unordered_map>
 #include <cstring>
 
-#include "band3_init.h"
+#include "generated/band3_init.h"
 
 // symbol --> func handler mapping for custom dta functions
 static std::unordered_map<uint32_t, PPCFunc*> g_custom_dta_funcs;
