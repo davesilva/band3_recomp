@@ -8,22 +8,24 @@ namespace band3 {
 
 struct DataArray {
     // nodes in array
-    rex::be<uint32_t> mNodes;
+    rex::be<u32> mNodes;
 
     // the file this array belongs to
-    rex::be<uint32_t> mFile;
+    rex::be<u32> mFile;
 
     // number of nodes in this array
-    rex::be<short> mSize;
+    rex::be<i16> mSize;
 
     // number of references
-    rex::be<short> mRefs;
+    rex::be<i16> mRefs;
 
     // the line of the file this array is in
-    rex::be<short> mLine;
+    rex::be<i16> mLine;
 
     // unused in retail build
-    rex::be<short> mDeprecated;
+    rex::be<i16> mDeprecated;
+
+    i16 Size() const { return mSize; }
 };
 
 }

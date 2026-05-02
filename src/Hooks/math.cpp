@@ -55,21 +55,14 @@ static void Normalize_Matrix3(mapped_f32 src, mapped_f32 dst) {
 REX_HOOK(_Normalize_Matrix3, Normalize_Matrix3)
 
 // Multiply(Matrix3* A, Matrix3* B, Matrix3* C)
-static void Multiply_Matrix3(mapped_f32 src_a, mapped_f32 src_b, mapped_f32 dst) {
-	be_f32 a[3][3], b[3][3];
+static void Multiply_Matrix3(rex::MappedPtr<be_f32[4]> a, rex::MappedPtr<be_f32[4]> b, mapped_f32 dst) {
+	be_f32 result[3][4];
 	for (int i = 0; i < 3; i++) {
-		a[i][0] = src_a[i*4];	a[i][1] = src_a[i*4 + 1];	a[i][2] = src_a[i*4 + 2];
-		b[i][0] = src_b[i*4];	b[i][1] = src_b[i*4 + 1];	b[i][2] = src_b[i*4 + 2];
+		result[i][0] = a[i][0]*b[0][0] + a[i][1]*b[1][0] + a[i][2]*b[2][0];
+		result[i][1] = a[i][0]*b[0][1] + a[i][1]*b[1][1] + a[i][2]*b[2][1];
+		result[i][2] = a[i][0]*b[0][2] + a[i][1]*b[1][2] + a[i][2]*b[2][2];
 	}
-	for (int i = 0; i < 3; i++) {
-		f32 c1 = a[i][0]*b[0][0] + a[i][1]*b[1][0] + a[i][2]*b[2][0];
-		f32 c2 = a[i][0]*b[0][1] + a[i][1]*b[1][1] + a[i][2]*b[2][1];
-		f32 c3 = a[i][0]*b[0][2] + a[i][1]*b[1][2] + a[i][2]*b[2][2];
-
-		dst[i*4] = c1;
-		dst[i*4 + 1] = c2;
-		dst[i*4 + 2] = c3;
-	}
+	std::memcpy(dst, result, sizeof(result));
 }
 
 REX_HOOK(_Multiply_Matrix3, Multiply_Matrix3)

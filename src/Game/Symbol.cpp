@@ -2,6 +2,7 @@
 #include <rex/hook.h>
 #include <rex/logging.h>
 #include <cstring>
+#include "src/hook_helpers.h"
 
 PPC_EXTERN_IMPORT(Symbol__Symbol);
 
@@ -45,6 +46,10 @@ Symbol::Symbol(PPCContext& ctx, uint8_t* base, const char* name) {
     Symbol__Symbol(symCtx, base);
 
     guest_addr_ = symCtx.r3.u32;
+}
+
+Symbol::Symbol(const char* name) {
+    guest_addr_ = name - reinterpret_cast<const char*>(BAND3_MEMORY_BASE());
 }
 
 uint32_t Symbol::value(uint8_t* base) const {

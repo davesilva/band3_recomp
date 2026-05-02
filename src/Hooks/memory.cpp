@@ -18,8 +18,8 @@ extern "C" PPC_FUNC(AddHeap)
         auto* arr = reinterpret_cast<const band3::DataArray*>(PPC_RAW_ADDR(arr_addr));
         uint32_t nodes_addr = arr->mNodes;
         auto* first = reinterpret_cast<const band3::DataNode*>(PPC_RAW_ADDR(nodes_addr));
-        if (first->type == band3::kDataSymbol) {
-            const char* name = reinterpret_cast<const char*>(PPC_RAW_ADDR(first->value));
+        if (first->mType == band3::kDataSymbol) {
+            const char* name = (first->mValue).symbol;
             auto& cfg = band3::GetConfig();
             if (cfg.main_heap_size > 0 && strcmp(name, "main") == 0) {
                 REXLOG_INFO("Overriding main heap size: {:#x} -> {:#x}", ctx.r4.u32, cfg.main_heap_size);
