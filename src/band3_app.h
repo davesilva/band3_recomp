@@ -41,8 +41,12 @@ class Band3App : public rex::ReXApp {
         PPCImageConfig));
   }
 
-  void OnPostSetup() override {
+  void OnConfigurePaths(rex::PathConfig& paths) override {
     band3::LoadConfig();
+    paths.game_data_root = band3::GetConfig().game_data_root;
+  }
+
+  void OnPostSetup() override {
     rex::cvar::SetFlagByName("log_level", band3::GetConfig().log_level);
     rex::cvar::SetFlagByName("audio_maxqframes", std::to_string(band3::GetConfig().max_queued_frames));
   }
@@ -65,5 +69,4 @@ class Band3App : public rex::ReXApp {
   // void OnPreSetup(rex::RuntimeConfig& config) override {}
   // void OnLoadXexImage(std::string& xex_image) override {}
   // void OnShutdown() override {}
-  // void OnConfigurePaths(rex::PathConfig& paths) override {}
 };
