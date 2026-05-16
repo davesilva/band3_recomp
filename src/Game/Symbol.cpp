@@ -3,7 +3,7 @@
 #include <rex/logging.h>
 #include <cstring>
 
-PPC_EXTERN_IMPORT(Symbol__Symbol);
+REX_EXTERN(Symbol__Symbol);
 
 // these should be good...
 static constexpr size_t kMaxSymbolNameLen = 256;

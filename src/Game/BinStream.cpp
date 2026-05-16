@@ -51,7 +51,7 @@ static inline void DoSwap(uint8_t* dst, const uint8_t* src, int32_t size) {
 }
 
 // SwapData(int* in, int* out, int size)
-extern "C" PPC_FUNC(SwapData)
+extern "C" REX_FUNC(SwapData)
 {
     uint32_t in_addr = ctx.r3.u32;
     uint32_t out_addr = ctx.r4.u32;
@@ -61,7 +61,7 @@ extern "C" PPC_FUNC(SwapData)
 }
 
 // BinStream::ReadEndian(void* buf, size_t length)
-extern "C" PPC_FUNC(BinStream__ReadEndian)
+extern "C" REX_FUNC(BinStream__ReadEndian)
 {
     uint32_t this_addr = ctx.r3.u32;
     uint32_t buf_addr = ctx.r4.u32;
@@ -75,7 +75,7 @@ extern "C" PPC_FUNC(BinStream__ReadEndian)
 }
 
 // BinStream::WriteEndian(void* data, int count)
-extern "C" PPC_FUNC(BinStream__WriteEndian)
+extern "C" REX_FUNC(BinStream__WriteEndian)
 {
     uint32_t this_addr = ctx.r3.u32;
     uint32_t data_addr = ctx.r4.u32;
